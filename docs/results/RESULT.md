@@ -55,10 +55,16 @@ Options options = Options(headers: {
 # Ссылки на демонстрацию работы/скриншоты
 
 Нижке гифки как апка работает по разными ОС
+1 - Android
+2 - WEb
+3 - Windows 11
 
-Android
+1
 <img src="AndroidApp.gif" alt="AndroidApp.gif" width="350"/>
-Web
+
+---
+
+2
 <img src="WEBApp.gif" alt="WEBApp.gif" width="480"/>
-Windows 11
+3
 <img src="Win11App.gif" alt="Win11App.gif" width="480"/>
