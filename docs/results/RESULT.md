@@ -55,5 +55,5 @@ Options options = Options(headers: {
 [здесь оставьте ссылки на скринкаст/скриншоты, можно в Github-репозитории или в отдельном обалке]
 
 <img src="AndroidApp.gif" alt="AndroidApp.gif" width="320"/>
-<img src="WEBApp.gif" alt="WEBApp.gif" width="320"/>
-<img src="Win11App.gif" alt="Win11App.gif" width="320"/>
+<img src="WEBApp.gif" alt="WEBApp.gif" width="480"/>
+<img src="Win11App.gif" alt="Win11App.gif" width="480"/>
