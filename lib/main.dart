@@ -6,6 +6,8 @@ import 'app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // ! С помощью СервисЛокатора GetIt создаем синглтон и регистрируем репозиторий MagicBallRepository для работы с загрузкой сообщений по сети
   GetIt.I.registerLazySingleton<MagicBallRepository>(
     () => MagicBallRepository(),
   );

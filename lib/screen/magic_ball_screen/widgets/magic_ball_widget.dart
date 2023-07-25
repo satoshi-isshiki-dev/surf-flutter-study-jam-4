@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shake/shake.dart';
-
 import '../bloc/magic_ball_bloc.dart';
 
 class MagicBallWidget extends StatelessWidget {
@@ -25,8 +23,11 @@ class MagicBallWidget extends StatelessWidget {
           flex: 5,
           child: GestureDetector(
             onTap: () {
+              // ! По нажатию на шар добавляем событие LoadMagicBallMessage в поток (BLoC)
               magicBallBloc.add(LoadMagicBallMessage());
             },
+            // ! Решил использовать Stack() для работы со "слоями" шара
+            // ! Сообщение от сервера, так же будет накладываться поверх
             child: Stack(
               alignment: Alignment.center,
               children: magicBallItems,
@@ -39,15 +40,11 @@ class MagicBallWidget extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Image.asset(
-                error
-                    ? 'assets/images/error/Ellipse 6.png'
-                    : 'assets/images/Ellipse 6.png',
+                'assets/images/${error ? 'relli6.png' : 'elli6.png'}',
                 fit: BoxFit.contain,
               ),
               Image.asset(
-                error
-                    ? 'assets/images/error/Ellipse 7.png'
-                    : 'assets/images/Ellipse 7.png',
+                'assets/images/${error ? 'relli7.png' : 'elli7.png'}',
                 fit: BoxFit.contain,
               ),
             ],

@@ -31,7 +31,7 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/images/error/
+
   fonts:
     - family: Gila Sans
       fonts:
