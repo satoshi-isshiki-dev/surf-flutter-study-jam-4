@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shake/shake.dart';
 
 import '../bloc/magic_ball_bloc.dart';
 
@@ -42,14 +43,12 @@ class MagicBallWidget extends StatelessWidget {
                     ? 'assets/images/error/Ellipse 6.png'
                     : 'assets/images/Ellipse 6.png',
                 fit: BoxFit.contain,
-                // width: 200,
               ),
               Image.asset(
                 error
                     ? 'assets/images/error/Ellipse 7.png'
                     : 'assets/images/Ellipse 7.png',
                 fit: BoxFit.contain,
-                // width: 200,
               ),
             ],
           ),
