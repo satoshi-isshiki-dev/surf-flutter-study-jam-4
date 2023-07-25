@@ -1,4 +1,4 @@
-package com.example.surf_practice_chat_flutter
+package org.codeandart.surf_practice_magic_ball
 
 import io.flutter.embedding.android.FlutterActivity
 

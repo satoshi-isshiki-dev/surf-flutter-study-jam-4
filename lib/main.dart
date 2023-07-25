@@ -1,25 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:surf_practice_magic_ball/screen/magic_ball_screen.dart';
+import 'package:get_it/get_it.dart';
+import 'package:surf_practice_magic_ball/repositories/magic_ball/magic_ball_repository.dart';
+
+import 'app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  GetIt.I.registerLazySingleton<MagicBallRepository>(
+    () => MagicBallRepository(),
+  );
 
   runApp(const MyApp());
-}
-
-/// App,s main widget.
-class MyApp extends StatelessWidget {
-  /// Constructor for [MyApp].
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MagicBallScreen(),
-    );
-  }
 }

@@ -1,25 +1,37 @@
 name: surf_practice_magic_ball
 description: A new Flutter project.
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: 3.0.3 # Dart SDK version
-  flutter: 3.10.3 # Flutter SDK version
+  sdk: ^3.0.3 # Dart SDK version
+  flutter: ^3.10.3 # Flutter SDK version
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  dio: ^5.3.0
+  get_it: ^7.6.0
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.1
-flutter:
 
+flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/error/
+  fonts:
+    - family: Gila Sans
+      fonts:
+        - asset: assets/fonts/GillSansC.ttf
